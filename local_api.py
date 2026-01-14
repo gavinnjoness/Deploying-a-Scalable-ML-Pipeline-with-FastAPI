@@ -1,5 +1,4 @@
 import json
-
 import requests
 
 # TODO: send a GET using the URL http://127.0.0.1:8000
@@ -9,7 +8,6 @@ r = None # Your code here
 # print()
 # TODO: print the welcome message
 # print()
-
 
 
 data = {

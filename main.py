@@ -54,16 +54,16 @@ async def post_inference(data: Data):
     data = {k.replace("_", "-"): [v] for k, v in data_dict.items()}
     data = pd.DataFrame.from_dict(data)
 
-    cat_features = [
-        "workclass",
-        "education",
-        "marital-status",
-        "occupation",
-        "relationship",
-        "race",
-        "sex",
-        "native-country",
-    ]
+    # cat_features = [ intentionally unused until inference is implemented
+    # "workclass",
+    # "education",
+    # "marital-status",
+    # "occupation",
+    # "relationship",
+    # "race",
+    # "sex",
+    # "native-country",
+    # ]
     data_processed, _, _, _ = process_data(
         # your code here
         # use data as data input
